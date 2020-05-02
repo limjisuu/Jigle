@@ -1,0 +1,143 @@
+#navbar_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar {
+  width: 300px;
+  height: 47px;
+}
+
+#mail_link,
+#image_link {
+  width: 50px;
+  height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0, 87);
+}
+
+#grid {
+  width: 30px;
+  height: 30px;
+  padding-right: 15px;
+}
+
+#login_link {
+  width: 39px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  background-size: auto;
+  background-color: #4387fd;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+}
+
+#jigle_logo {
+  padding-top: 69px;
+  height: 130px;
+  width: 210px;
+}
+
+#search_container {
+  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+#search {
+  background: #ffffff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  width: 460px;
+  height: 39px;
+  padding-top: 5px;
+  padding-left: 14px;
+  padding-right: 8px;
+  font-size: 13px;
+}
+
+#function_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18px;
+}
+
+#function_buttons button {
+  margin: 11px 4px;
+  padding: 0px 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+}
+
+#search_button {
+  width: 77px;
+  height: 34px;
+}
+
+#lucky_button {
+  width: 108px;
+  height: 34px;
+}
+
+#corona_info {
+  display: flex;
+  justify-content: center;
+}
+
+#corona_text {
+  text-decoration: none;
+  font-size: 13px;
+  margin: 32px 0px;
+}
+
+/* #footer_container {
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+}
+
+#footer {
+  flex: 1;
+  width: 1166px;
+  height: 81px;
+  margin-left: -27px;
+} */
+
+/* footer {
+  left: 0px;
+  bottom: 0px;
+  position: fixed;
+  width: 100px;
+  height: 81px;
+}
+
+footer2 {
+} */
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  padding: 30px 0px;
+}
