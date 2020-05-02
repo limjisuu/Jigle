@@ -1,11 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #navbar_container {
   display: flex;
   justify-content: flex-end;
 }
 
 #navbar {
-  width: 300px;
-  height: 47px;
+  margin-top: 15px;
+  min-width: 212px;
+  height: 30px;
+  display: flex;
+  text-align: center;
 }
 
 #mail_link,
@@ -16,13 +26,24 @@
   line-height: 24px;
   padding-right: 15px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0, 87);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#mail_link:hover,
+#image_link:hover {
+  text-decoration: underline;
+  color: #5f6368;
 }
 
 #grid {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   padding-right: 15px;
+  opacity: 0.55;
+}
+
+#grid:hover {
+  opacity: 1;
 }
 
 #login_link {
@@ -35,9 +56,11 @@
   background-size: auto;
   background-color: #4387fd;
   color: #ffffff;
+  border: 1px solid #4285f4;
   border-style: solid;
   border-radius: 2px;
   text-decoration: none;
+  margin-right: 15px;
 }
 
 #logo {
@@ -48,8 +71,8 @@
 
 #jigle_logo {
   padding-top: 69px;
-  height: 130px;
-  width: 210px;
+  height: 110px;
+  width: 170px;
 }
 
 #search_container {
@@ -63,24 +86,59 @@
   border: 1px solid #dfe1e5;
   box-shadow: none;
   border-radius: 24px;
-  width: 460px;
+  width: 560px;
   height: 39px;
   padding-top: 5px;
   padding-left: 14px;
   padding-right: 8px;
   font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search:hover {
+  box-shadow: 3px 3px 10px 5px #f2f2f2;
+}
+
+#search_img span {
+  display: flex;
+  padding: 0px 8px;
+}
+
+#search_img {
+  display: flex;
+  align-items: center;
+}
+
+#search_keyboard {
+  width: 24px;
+  height: 24px;
+  font-size: 13px;
+  line-height: 44px;
+}
+
+#search_mic {
+  width: 24px;
+  height: 24px;
+  line-height: 44px;
+  font-size: 13px;
+}
+#search_glass {
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  fill: #9aa0a6;
+  padding-right: 1.3rem;
 }
 
 #function_buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 18px;
 }
 
 #function_buttons button {
-  margin: 11px 4px;
-  padding: 0px 16px;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 4px;
@@ -88,13 +146,27 @@
 }
 
 #search_button {
-  width: 77px;
+  width: 115px;
   height: 34px;
+  margin: 11px 4px;
+  padding: 0px 16px;
+  border: solid 1px rgba(242, 242, 242);
+  font-size: 14px;
+  line-height: 27px;
 }
 
 #lucky_button {
-  width: 108px;
+  align-items: flex-start;
+  width: 145px;
   height: 34px;
+  margin: 11px 4px;
+  padding: 0px 16px;
+  border: solid 1px rgba(242, 242, 242);
+}
+
+#search_button:hover,
+#lucky_button:hover {
+  border: solid 1px #9aa0a6;
 }
 
 #corona_info {
@@ -106,38 +178,72 @@
   text-decoration: none;
   font-size: 13px;
   margin: 32px 0px;
+  color: #1a0dab;
 }
 
-/* #footer_container {
-  flex-direction: column;
+#corona_text:hover {
+  text-decoration: underline;
+}
+
+#wrapper {
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
 }
 
-#footer {
+#main_content {
   flex: 1;
-  width: 1166px;
-  height: 81px;
-  margin-left: -27px;
-} */
-
-/* footer {
-  left: 0px;
-  bottom: 0px;
-  position: fixed;
-  width: 100px;
-  height: 81px;
-}
-
-footer2 {
-} */
-
-.wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 footer {
-  padding: 30px 0px;
+  height: 81px;
+  background-color: #f2f2f2;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+footer div,
+a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#footer1 a {
+  padding-right: 27px;
+}
+
+#footer_first_line_container {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+#footer_first_line {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-left: 30px;
+}
+
+#footer_second_line {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+#footer_second_line a {
+  color: #5f6368;
+}
+
+#footer2 {
+  margin-left: auto;
+}
+
+#footer2 a {
+  padding-right: 27px;
+}
+
+#footer_first_line #footer_second_line {
+  border-top: 1px solid #e4e4e4;
 }
